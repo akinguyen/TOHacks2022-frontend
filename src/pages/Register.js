@@ -6,7 +6,7 @@ export default function Register() {
   return (
     <div className="register-background">
       <div className="register-image-container">
-        <img src={leftImage} />
+        <img src={leftImage} alt="Brainstorm" />
       </div>
       <div className="register-container">
         <div className="register-title">Sign Up</div>
