@@ -2,11 +2,14 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import AppRouter from "./components/AppRouter";
 import reportWebVitals from "./reportWebVitals";
+import Provider from "./states/Provider";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <AppRouter />
+    <Provider>
+      <AppRouter />
+    </Provider>
   </React.StrictMode>
 );
 
