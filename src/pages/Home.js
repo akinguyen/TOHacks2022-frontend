@@ -1,9 +1,9 @@
-import React, { useState, useContext } from "react";
-import { useNavigate } from "react-router-dom";
+import React, { useContext } from "react";
+//import { useNavigate } from "react-router-dom";
 import { Context } from "../states/Provider";
 export default function Home() {
-  const navigate = useNavigate();
-  const [state, dispatch] = useContext(Context);
+  //const navigate = useNavigate();
+  const [state] = useContext(Context);
 
   if (!state.isLoggedIn) {
     window.location.href = "/login";
